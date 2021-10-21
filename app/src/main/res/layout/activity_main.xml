@@ -6,22 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="177dp"
-        android:layout_height="48dp"
-        android:editable="true"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:hint="Enter calculation"
-        android:textColor="@color/design_default_color_on_secondary"
-        android:textColorHint="@color/purple_700"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="411dp"
@@ -187,7 +171,6 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                android:onClick="calculateAnswer"
                 android:text="=" />
 
             <Button
@@ -201,4 +184,18 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="254dp"
+        android:layout_height="84dp"
+        android:ems="10"
+        android:hint="Enter Calculations"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
 </androidx.constraintlayout.widget.ConstraintLayout>
